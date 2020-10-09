@@ -12,7 +12,7 @@ function setCityName(name) {
 }
 
 function convertToCelsius(temp) {
-    return temp-273.15;
+    return temp - 273.15;
 }
 
 function makeDayDiv(date, maxTemp, avgHumidity) {
@@ -81,7 +81,7 @@ function run() {
     const corsAnywhereHost = "https://cors-anywhere.herokuapp.com/";
 
     const owmSampleLink = "https://samples.openweathermap.org/data/2.5/forecast?id=524901&appid=b6907d289e10d714a6e88b30761fae22";
-    
+
     $.getJSON(corsAnywhereHost + owmSampleLink, function (data) {
         dismissLoading();
         parse(data);
